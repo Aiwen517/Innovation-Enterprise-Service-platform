@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>This is a base</title>   <!--这是未登陆的base-->
+
+    <link rel="icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="static/css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="static/css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="static/css/touchTouch.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="static/css/kwicks-slider.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/superfish.js"></script>
+	<script type="text/javascript" src="static/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="static/js/jquery.kwicks-1.5.1.js"></script>
+	<script type="text/javascript" src="static/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="static/js/touchTouch.jquery.js"></script>
+     <link rel="stylesheet" href="static/css/docs.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="static/css/ie.css" type="text/css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    {% block head %}
+    {% endblock%}
+</head>
+
+<body>
+<!-- header start -->
+<header>
+    <div class="container clearfix">
+        <div class="row">
+            <div class="span12">
+                <div class="navbar navbar_">
+                    <div class="container">
+                        <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+                        <div class="nav-collapse nav-collapse_  collapse">
+                            <ul class="nav sf-menu">
+                                <li ><a href="homepage.html">首页</a></li>
+                                <li><a href="{% url 'News'%}">企业资讯</a></li>
+                                <li class="sub-menu"><a href="{% url 'product'%}">产品信息</a>
+                                    <ul>
+                                        <li><a href="{% url 'CompanyProduct'%}">企业发布</a></li>
+                                        <li><a href="{% url 'PersonProduct'%}">个人发布</a></li>
+                                        <li><a href="#">其他</a></li>
+                                    </ul>
+                                <li class="sub-menu"><a href="{% url 'Needs'%}">需求管理</a>
+                                    <ul>
+                                        <li><a href="">企业需求</a></li>
+                                        <li><a href="{% url 'PersonNeeds'%}">个人需求</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu"><a href="{% url 'exhibition'%}">展会信息</a>
+                                    <ul>
+                                        <li><a href="{% url 'exhibition'%}">中国影视展览</a></li>
+                                        <li><a href="{% url 'exhibition'%}">中国春季服装展览</a></li>
+                                        <li><a href="{% url 'exhibition'%}">中国珠宝展览</a></li>
+                                        <li><a href="{% url 'exhibition'%}">中国电子产品展览</a></li>
+                                        <li><a href="{% url 'exhibition'%}">其他</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'signup' %}">注册</a></li>
+                                <li><a href="{% url 'login'%}">登录</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
+{% block mainbody %}
+{% endblock %}
+
+</html>

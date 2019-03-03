@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>个人产品详情</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="http://dzyngiri.com/favicon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="static/css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="static/css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="static/js/jquery.js"></script>
+	<script type="text/javascript" src="static/js/superfish.js"></script>
+    <script type="text/javascript" src="static/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="static/js/jquery.cookie.js"></script>
+	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
+	<script>		
+		 jQuery(window).load(function() {	
+		 $x = $(window).width();		
+	if($x > 1024)
+	{			
+	jQuery("#content .row").preloader();    }			 
+		
+		 jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
+  		  }); 
+					
+	</script>
+
+	<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="static/css/docs.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="static/css/ie.css" type="text/css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <![endif]-->
+  
+  <!--Google analytics code-->	  
+	  <script type="text/javascript">
+           var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-29231762-1']);
+          _gaq.push(['_setDomainName', 'dzyngiri.com']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+      </script>
+	</head>
+<body>
+{% extends "base.html" %}
+{% block mainbody %}
+<div class="spinner"></div>
+<div class="bg-content">
+      <!-- content -->
+      <div id="content"><div class="ic"></div>
+		  <div class="container">
+			  <div class="single-page-artical">
+				  <div class="artical-content">
+					  <h3>Lorem Ipsum is simply dummy text</h3>
+					  <img class="img-responsive" src="static/images/banner.jpg" alt=" " />
+					  <br>
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				 		 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				  </div>
+				  <div class="artical-links"style="float:left;margin-right:780px" >
+					  <ul>
+						  <li><small> </small><span>June 30, 2015</span></li>
+						  <li><small> </small><span>联系卖家：</span><a href="#" class="mail-1">123243433</a><br></li>
+						  <li><small> </small><span>收藏：</span><a href="#" class="mail-1">123243433</a><br></li>
+					  </ul>
+				  </div>
+				  <br>
+				  <div class="comment-grid-top" style="float:left" >
+					  <li><small></small><span>价格：</span><a class="comment-grid-top" >998</a><br></li>
+				  </div>
+				  <br>
+				  <div id="line">
+					  <HR style="FILTER: alpha(opacity=50,finishopacity=0,style=3)" width="100%" color=#987cb9 SIZE=1>
+				  </div>
+				  <br>
+				  <div class="comment-grid-top">
+					  <h3>留言区</h3>
+					  <div class="comments-top-top">
+						  <div class="top-comment-right">
+							  <ul>
+								  <li><span class="left-at"><a href="#">Admin</a></span></li>
+								  <li><span class="right-at">June 30, 2015 at 10.30am</span></li>
+								  <li><a class="reply" href="#">回复</a></li>
+							  </ul>
+							  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less </p>
+						  </div>
+						  <div class="clearfix"> </div>
+					  </div>
+					  <div class="comments-top-top top-grid-comment">
+						  <div class="top-comment-right">
+							  <ul>
+								  <li><span class="left-at"><a href="#">Admin</a></span></li>
+								  <li><span class="right-at">June 30, 2015 at 10.30am</span></li>
+								  <li><a class="reply" href="#">回复</a></li>
+							  </ul>
+							  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less </p>
+						  </div>
+						  <div class="clearfix"> </div>
+					  </div>
+				  </div>
+				  <div class="artical-commentbox">
+					  <h3>您的留言</h3>
+					  <div class="table-form">
+						  <form>
+							  <textarea value="Message:"style="overflow:scroll; overflow-x:hidden; height:130px; width:1100px"onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+							  <br>
+							  <input type="submit" value="提交">
+						  </form>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+</div>
+
+<!--============================== footer =================================-->
+<footer>
+      <div class="container clearfix">
+    <ul class="list-social pull-right">
+          <li><a class="icon-1" href="#"></a></li>
+          <li><a class="icon-2" href="#"></a></li>
+          <li><a class="icon-3" href="#"></a></li>
+          <li><a class="icon-4" href="#"></a></li>
+        </ul>
+  </div>
+    </footer>
+<script type="text/javascript" src="static/js/bootstrap.js"></script>
+{% endblock%}
+</body>
+</html>

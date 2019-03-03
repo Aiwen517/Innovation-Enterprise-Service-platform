@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>用户注册</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/assets/css/form-elements.css">
+        <link rel="stylesheet" href="static/assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="static/assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+        <!-- Top content -->
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>用户注册</strong> User Sign-up</h1>
+                            <div class="description">
+                            	<p>
+	                            	<strong> 注册后 </strong>您可以查看更多资讯，方便您的留言、订购等操作
+
+                            	</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="form-top">
+                        		<div class="form-top-left">
+                        			<h3>Sign-up</h3>
+                            		<p> Enter your username and password and your basic information: </p>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-lock"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom">
+			                    <form role="form" action="" method="post" class="login-form">
+                                    <div class="form-group">
+			                    		<select class="form-control">
+                                            <option value="">请选择您的身份</option>
+                                            <option value="0" class="form-control">个人用户</option>
+                                            <option value="1" class="form-control">企业用户</option>
+                                        </select>
+			                        </div>
+
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="form-username">用户昵称/企业名称</label>
+			                        	<input type="text" name="form-username" placeholder="用户昵称/企业名称" class="form-username form-control" id="form-username">
+			                        </div>
+
+                                    <div class="form-group">
+			                    		<label class="sr-only" for="form-truename">用户昵称/企业名称</label>
+			                        	<input type="text" name="form-truename" placeholder="真实姓名" class="form-truename form-control" id="form-truename">
+			                        </div>
+
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="form-password">密码</label>
+			                        	<input type="password" name="form-password" placeholder="密码" class="form-password form-control" id="form-password">
+			                        </div>
+
+                                    <div class="form-group">
+			                        	<label class="sr-only" for="form-password">确认密码</label>
+			                        	<input type="password" name="form-password" placeholder="确认密码" class="form-password form-control" id="form-password">
+			                            {{ error_pass_a }}
+                                    </div>
+
+                                    <div class="form-group">
+			                        	<label class="sr-only" for="form-tel">联系方式</label>
+			                        	<input type="text" name="form-tel" placeholder="联系方式" class="form-tel form-control" id="form-tel">
+			                        </div>
+
+                                    <div class="form-group">
+			                        	<label class="sr-only" for="form-address">地址/公司地址</label>
+			                        	<input type="text" name="form-address" placeholder="地址/公司地址" class="form-address form-control" id="form-address">
+			                        </div>
+
+                                    <div class="form-group">
+			                        	<label class="sr-only" for="form-email">邮箱</label>
+			                        	<input type="text" name="form-email" placeholder="邮箱" class="form-email form-control" id="form-email">
+			                        </div>
+
+                                    <div class="form-group">
+			                        	<label class="sr-only" for="form-QQ">QQ账号</label>
+			                        	<input type="text" name="form-QQ" placeholder="QQ账号" class="form-QQ form-control" id="form-QQ">
+			                        </div>
+
+                                    <div>
+                                         <button type="submit" class="btn">注册</button>
+                                    </div>
+                                    <br>
+                                     <div>
+                                         <a href="index.html">
+                                            <button type="button" class="form-control">返回</button>
+                                         </a>
+                                    </div>
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <!-- Javascript -->
+        <script src="static/assets/js/jquery-1.11.1.min.js"></script>
+        <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="static/assets/js/jquery.backstretch.min.js"></script>
+        <script src="static/assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="static/assets/js/placeholder.js"></script>
+        <![endif]-->
+      <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 1829px; width: 1920px; z-index: -999999; position: fixed;"><img src="assets/img/backgrounds/1.jpg" none;>
+        <img src="static/assets/img/backgrounds/1.jpg">
+
+     </div>
+
+
+    </body>
+
+</html>
